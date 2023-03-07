@@ -1,0 +1,171 @@
+/* Fonts */
+@font-face {
+  font-weight: normal;
+  font-style: normal;
+  font-family: "eina01-bold";
+  src: url("../fonts/eina01-bold.woff2");
+}
+@font-face {
+  font-weight: normal;
+  font-style: normal;
+  font-family: "NeueHaasUnicaW1G-Light";
+  src: url("../fonts/NeueHaasUnicaW1G-Light.woff2");
+}
+.page-content {
+  --main-color: #eeeff4;
+  --text-color: #096343;
+  --header-font: "eina01-bold";
+  --text-font: "NeueHaasUnicaW1G-Light";
+}
+
+/************************ Header-Section *****************************/
+.memes-section {
+  margin-top: 5%;
+}
+.meme--title {
+  font-size: 2vh;
+  font-family: var(--text-font);
+  color: var(--text-color);
+  letter-spacing: 1px;
+  text-align: center;
+  margin-bottom: 8%;
+}
+.meme--form {
+  margin: 3%;
+}
+.meme--input {
+  padding: 12px;
+  margin-bottom: 4%;
+  border: 1px solid var(--text-color);
+  border-radius: 5px;
+  font-family: var(--text-font);
+  color: var(--text-color);
+  letter-spacing: 1px;
+  transition: all 0.3s ease-in-out;
+  font-size: 15px;
+}
+.meme--input:focus {
+  box-shadow: none !important;
+  outline: 0px !important;
+  border: 1px solid #7bb7a5;
+  transition: all 0.3s ease-in-out;
+}
+.meme--input:nth-child(2) {
+  margin-left: 4%;
+}
+.meme--button {
+  padding: 12px;
+  border: 1px solid var(--text-color);
+  border-radius: 5px;
+  font-family: var(--text-font);
+  color: var(--main-color);
+  background: var(--text-color);
+  letter-spacing: 1px;
+  transition: all 0.3s ease-in-out;
+  font-size: 18px;
+  width: 100%;
+  margin-bottom: 3%;
+  cursor: pointer;
+}
+.meme--button:hover {
+  color: var(--main-color);
+  border: 1px solid #7bb7a5;
+  background: #7bb7a5;
+  transition: all 0.3s ease-in-out;
+}
+.meme {
+  position: relative;
+}
+.meme--image {
+  object-fit: cover;
+  max-width: 100%;
+  height: 100%;
+  border-radius: 3px;
+}
+.meme--text {
+  position: absolute;
+  width: 80%;
+  text-align: center;
+  left: 50%;
+  transform: translateX(-50%);
+  margin: 15px 0;
+  padding: 0 5px;
+  font-family: impact, sans-serif;
+  font-size: 2em;
+  text-transform: uppercase;
+  color: white;
+  letter-spacing: 1px;
+  text-shadow: 2px 2px 0 #000, -2px -2px 0 #000, 2px -2px 0 #000,
+    -2px 2px 0 #000, 0 2px 0 #000, 2px 0 0 #000, 0 -2px 0 #000, -2px 0 0 #000,
+    2px 2px 5px #000;
+}
+.bottom {
+  bottom: 0;
+}
+.top {
+  top: 0;
+}
+/********************** Extra small devices (portrait phones, less than 576px) ****************************/
+@media (max-width: 575.98px) {
+  .meme {
+    margin: 4%;
+  }
+}
+/************************ Small devices (landscape phones, 576px and up) *****************************/
+@media (min-width: 576px) and (max-width: 767.98px) {
+  body {
+    display: none;
+  }
+}
+/***************************** Medium devices (tablets, 768px and up) ********************************/
+@media (min-width: 768px) and (max-width: 991.98px) {
+  body {
+    display: none;
+  }
+}
+/********************************** Large devices (desktops, 992px and up) *********************************/
+@media (min-width: 992px) and (max-width: 1199.98px) {
+  body {
+    display: none;
+  }
+}
+/************************ Extra large devices (large desktops, 1200px and up) ********************************/
+@media (min-width: 1200px) {
+  /****** meme-Section ******/
+  .memes-section {
+    margin-top: 3%;
+  }
+  .meme--title {
+    font-size: 3.2vh;
+    letter-spacing: 1px;
+    margin-bottom: -1%;
+  }
+  .meme--form {
+    margin: 3%;
+  }
+  .meme--input {
+    padding: 10px 15px;
+    margin-bottom: 1%;
+    width: 20%;
+  }
+  .meme--input:nth-child(2) {
+    margin-left: 1%;
+  }
+  .meme--button {
+    padding: 12px;
+    font-size: 18px;
+    width: 25%;
+    margin-bottom: 1%;
+  }
+  .meme--image {
+    object-fit: cover;
+    width: 600px;
+    height: 450px;
+    border-radius: 3px;
+    margin-top: -2%;
+  }
+}
+
+/************************ Extra large devices (extra large desktops, 1900px and up) ********************************/
+@media (min-width: 2000px) {
+}
